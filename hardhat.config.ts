@@ -12,8 +12,13 @@ const config: HardhatUserConfig = {
       accounts: process.env.PRIVATE_KEY ? [process.env.PRIVATE_KEY] : [],
       chainId: 1,
     },
+    tenderly_sting_shine: {
+      url: "https://virtual.mainnet.eu.rpc.tenderly.co/ajeetg88/project/2a6c21-404a4e",
+      accounts: process.env.PRIVATE_KEY ? [process.env.PRIVATE_KEY] : [],
+      chainId: 1,
+    },
   },
-  defaultNetwork: "tenderly_mainnet",
+  defaultNetwork: "tenderly_sting_shine",
 };
 
 export default config;
